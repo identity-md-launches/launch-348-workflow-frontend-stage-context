@@ -1,0 +1,59 @@
+{
+  "observedAt": "2026-09-27T06:50:04.525Z",
+  "source": "Read-only public RPC checks; no wallet and no broadcast.",
+  "attempts": [],
+  "result": "PASS",
+  "endpoint": "https://ethereum-sepolia-rpc.publicnode.com",
+  "poolId": "0xf73defb8232316892e7ed9d7f56a0156fb053658f07e822cea2ca161f4f4f7d5",
+  "state": {
+    "block": "11791646",
+    "timestamp": "1790491800",
+    "receivedAt": 1790491805335,
+    "epoch": "0",
+    "end": "1791093108",
+    "current": {
+      "epoch": "0",
+      "users": [
+        "0x0000000000000000000000000000000000000000",
+        "0x0000000000000000000000000000000000000000",
+        "0x0000000000000000000000000000000000000000",
+        "0x0000000000000000000000000000000000000000",
+        "0x0000000000000000000000000000000000000000"
+      ],
+      "volumes": [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "pot": "0",
+      "claimed": [
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "finalized": false
+    },
+    "past": [],
+    "sqrtPrice": "560227709747861399187319382274582",
+    "protocolFee": 0,
+    "lpFee": 3000,
+    "decimals": 18,
+    "balance": "0",
+    "ethBalance": "0",
+    "allowance": "0",
+    "volume": "0"
+  },
+  "activity": {
+    "fromBlock": "11791356",
+    "toBlock": "11791646",
+    "events": []
+  },
+  "readOnlyBuyQuote": {
+    "inputWei": "1000000000000",
+    "outputRaw": "49481270350726962106"
+  }
+}

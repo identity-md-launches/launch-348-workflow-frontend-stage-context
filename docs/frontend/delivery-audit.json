@@ -1,0 +1,15 @@
+{
+  "result": "PASS",
+  "scope": "web/**, dist/**, docs/**; web/.gitignore explicitly allowed",
+  "sourceCommit": "030e2537879f7cf474ef895f9ed1f9999fdb4830",
+  "deliveredFilesIncludingThisReport": 52,
+  "rawDeliveryBytesExcludingThisReport": 3792573,
+  "baselineBundleBytes": 179249,
+  "conservativeCombinedBytesWith1MiBMetadataReserve": 5020398,
+  "bundleBudgetBytes": 8388608,
+  "budgetMethod": "Complete existing-history Git bundle + uncompressed delivery files + 1 MiB reserve for this report, new Git metadata and packing overhead. No exact new-commit bundle was made because the checkout Git directory is read-only.",
+  "submodules": 0,
+  "includedDependencyCaches": 0,
+  "forbiddenChangedPaths": [],
+  "gitCommit": "Unavailable: git add failed because .git/index.lock cannot be created on the read-only filesystem. Delivered files remain in the working tree for the network collector."
+}

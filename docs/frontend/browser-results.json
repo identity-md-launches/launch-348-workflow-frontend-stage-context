@@ -1,0 +1,172 @@
+{
+  "observedAt": "2026-09-27T06:52:03.570Z",
+  "exportSubpath": "/preview/",
+  "mode": "Production export, mocked RPC and injected wallet; no broadcast",
+  "checks": [
+    {
+      "name": "Disconnected: live standings, four past epochs and decoded event; signing disabled",
+      "result": "PASS"
+    },
+    {
+      "name": "Keyboard skip link focuses main content",
+      "result": "PASS"
+    },
+    {
+      "name": "Unknown chain: switch → add exact network → switch; wrong-chain actions disabled",
+      "result": "PASS"
+    },
+    {
+      "name": "Invalid amount announces an inline error and focuses the input",
+      "result": "PASS"
+    },
+    {
+      "name": "Buy: quoter simulation, router simulation, exact ETH value, wallet hookData, price limit, confirmed receipt",
+      "result": "PASS"
+    },
+    {
+      "name": "Keyboard activates wallet connection, quote submission and buy confirmation",
+      "result": "PASS"
+    },
+    {
+      "name": "Sell: explicit exact-amount router approval, new quote, zero ETH value and upward price limit",
+      "result": "PASS"
+    },
+    {
+      "name": "Claim uses one-based rank, refreshes paid state; finalize independently refreshes carried state",
+      "result": "PASS"
+    },
+    {
+      "name": "Simulation revert is visible and prevents wallet broadcast",
+      "result": "PASS"
+    },
+    {
+      "name": "Wallet rejection is recoverable and produces no transaction",
+      "result": "PASS"
+    },
+    {
+      "name": "Failed receipt is reported as a failure with the submitted transaction link",
+      "result": "PASS"
+    },
+    {
+      "name": "Account change clears pending quotes and reloads wallet-specific state",
+      "result": "PASS"
+    },
+    {
+      "name": "Disconnect disables signing and clears wallet-specific state",
+      "result": "PASS"
+    },
+    {
+      "name": "Automated accessibility scan: no WCAG A/AA violations",
+      "result": "PASS",
+      "passes": 33
+    },
+    {
+      "name": "Measured six rendered text/background pairs at or above 4.5:1",
+      "result": "PASS"
+    },
+    {
+      "name": "Rendered 1440px production layout without horizontal overflow",
+      "result": "PASS"
+    },
+    {
+      "name": "Rendered 820px production layout without horizontal overflow",
+      "result": "PASS"
+    },
+    {
+      "name": "Rendered 390px production layout without horizontal overflow",
+      "result": "PASS"
+    },
+    {
+      "name": "Rendered 320px production layout without horizontal overflow",
+      "result": "PASS"
+    },
+    {
+      "name": "200% CSS text enlargement at 820px reflows without horizontal page overflow",
+      "result": "PASS"
+    },
+    {
+      "name": "Reduced motion removes button transitions",
+      "result": "PASS"
+    },
+    {
+      "name": "Primary scenario: no uncaught browser errors or failed resources",
+      "result": "PASS"
+    },
+    {
+      "name": "Empty epoch and missing-wallet states give actionable explanations",
+      "result": "PASS"
+    },
+    {
+      "name": "RPC failure fails closed; Retry restores live state",
+      "result": "PASS"
+    },
+    {
+      "name": "Missing deployment code blocks actions",
+      "result": "PASS"
+    },
+    {
+      "name": "Tampered ABI fails integrity verification before connection/actions",
+      "result": "PASS"
+    }
+  ],
+  "screenshots": [
+    "docs/frontend/keyboard-confirm.png",
+    "docs/frontend/view-1440.png",
+    "docs/frontend/view-820.png",
+    "docs/frontend/view-390.png",
+    "docs/frontend/view-320.png",
+    "docs/frontend/text-200.png",
+    "docs/frontend/empty-no-wallet.png"
+  ],
+  "consoleErrors": [],
+  "resourceFailures": [],
+  "accessibility": {
+    "violations": [],
+    "passes": 33
+  },
+  "contrast": [
+    {
+      "foreground": "body",
+      "background": "body",
+      "fg": "rgb(32, 43, 36)",
+      "bg": "rgb(245, 243, 237)",
+      "ratio": 13.21
+    },
+    {
+      "foreground": ".intro",
+      "background": "body",
+      "fg": "rgb(98, 105, 95)",
+      "bg": "rgb(245, 243, 237)",
+      "ratio": 5.11
+    },
+    {
+      "foreground": ".pot-note",
+      "background": ".pot-panel",
+      "fg": "rgb(195, 207, 191)",
+      "bg": "rgb(39, 62, 49)",
+      "ratio": 7.14
+    },
+    {
+      "foreground": ".epoch-clock strong",
+      "background": ".pot-panel",
+      "fg": "rgb(213, 247, 124)",
+      "bg": "rgb(39, 62, 49)",
+      "ratio": 9.58
+    },
+    {
+      "foreground": ".notice p",
+      "background": ".notice",
+      "fg": "rgb(94, 97, 86)",
+      "bg": "rgb(235, 233, 223)",
+      "ratio": 5.2
+    },
+    {
+      "foreground": ".amount-box > span",
+      "background": ".amount-box",
+      "fg": "rgb(98, 105, 95)",
+      "bg": "rgb(248, 247, 242)",
+      "ratio": 5.28
+    }
+  ],
+  "result": "PASS"
+}

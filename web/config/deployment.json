@@ -1,0 +1,55 @@
+{
+  "chainId": 11155111,
+  "repoUrl": "https://github.com/identity-md-launches/launch-253-volumeleaderboardhook",
+  "version": 1,
+  "launchId": "04ac0b4c-e623-4522-9989-3a6997f0846f",
+  "manifest": {
+    "hook": {
+      "contract": "VolumeLeaderboardHook",
+      "permissions": [
+        "beforeSwap",
+        "afterSwap",
+        "beforeSwapReturnDelta",
+        "afterSwapReturnDelta"
+      ],
+      "constructorArgs": [
+        "0xE03A1074c86CFeDd5C142C4F04F1a1536e203543"
+      ]
+    },
+    "kind": "univ4_hook",
+    "pool": {
+      "fee": 3000,
+      "tickSpacing": 60,
+      "initialPrice": "79228162514264337593543950336",
+      "pairedCurrency": "0x0000000000000000000000000000000000000000"
+    },
+    "notes": "Describes src/VolumeLeaderboardHook.sol:VolumeLeaderboardHook and src/VOLM.sol:VOLM for the approved Sepolia launch. ABI exports are docs/abi/VolumeLeaderboardHook.json and docs/abi/VOLM.json. The hook constructor takes only IPoolManager manager; VOLM takes no constructor arguments. getHookPermissions enables exactly the four listed flags; all others are false. The constructor validates the hook address bits: address & 0x3fff must equal 0x00cc. The pool uses native ETH as currency0, deployed VOLM as currency1, and the deployed hook. Its LP fee is 0.3%. initialPrice is decimal sqrtPriceX96, equal to 2^96 (1:1 raw units), matching test/helpers/FactoryRehearsal.sol. This price is the existing rehearsal assumption, not a numeric price specified in the approved brief. The rehearsal initializes at this price, seeds VOLM-only liquidity and exercises the first buy with no initial ETH reserve. The hook charges floor(ETH-leg volume * 30 / 10000): a positive specified beforeSwap delta when ETH is specified, or a positive unspecified afterSwap delta otherwise. Fees become ERC-6909 ETH claims; callbacks do not transfer ETH. Partial fills revert. Each native-ETH pool has separate weekly epochs starting at hook construction and an O(5) top-five volume leaderboard with strict overtaking and incumbent tie priority. Anyone may trigger ended-epoch rank payouts of 40/25/15/10/10 percent to recorded recipients; finalization carries empty-rank shares and rounding remainder into the then-current epoch. Payouts burn claims and take ETH through unlockCallback. All callbacks require the PoolManager. Non-ETH currency0 pools receive zero deltas and no bookkeeping. Identity comes from exactly 32 bytes encoding a canonical nonzero address; invalid data credits nobody but still pays fees. hookData is unauthenticated and can credit another address. No admin, setters, pause, upgrade or sweep are implemented. This Sepolia toy promises no return. These notes describe implementation and local rehearsal assumptions; launch policy and signed artifact linkage belong to services. Independent review, source publication, attestation, admission and deployment are separate steps whose completion is not asserted here.",
+    "token": {
+      "name": "Volume",
+      "symbol": "VOLM",
+      "contract": "VOLM",
+      "decimals": 18
+    }
+  },
+  "contracts": [
+    {
+      "name": "VOLM",
+      "txHash": "0x980b335c137f2b99b7794f6cb76cec5c78c45b3c315b4246a9e23ab20d5a373b",
+      "abiHash": "38880b8e56d42ce900f744a7908c7139632a49f1c3f33385c64ceaed29d37bee",
+      "address": "0xf7047a8492fe4d9db3a85ad9942b51e0e195225e",
+      "blockNumber": 11791356,
+      "creationCodeHash": "05ba94450d9332c92debf40cc7ca699a3886d6f21e3a811281a6e49a420a890e"
+    },
+    {
+      "name": "VolumeLeaderboardHook",
+      "txHash": "0x980b335c137f2b99b7794f6cb76cec5c78c45b3c315b4246a9e23ab20d5a373b",
+      "abiHash": "6cca844bc066250cf7664d292ca4f70ddcee2de8924b0c9fbef38d95fd641cc0",
+      "address": "0x3de21d59af2912a6a6ac0d922aa18bad603d00cc",
+      "blockNumber": 11791356,
+      "creationCodeHash": "6f42913366cb134c7195951f2b89b2f3482ac44557a239c19efd159a356f82c6"
+    }
+  ],
+  "sourceCommit": "030e2537879f7cf474ef895f9ed1f9999fdb4830",
+  "abiInstructions": "Build ABIs from this exact source commit; compare canonicalKeccak(abi) with abiHash. Verify deployed code on the stated chain before enabling transactions.",
+  "attestationHash": "d6963c7021ac3a0eb2d05115c44a21fbe8ec7b4dc0ffb5724fa24f8122752269"
+}

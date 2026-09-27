@@ -1,0 +1,127 @@
+{
+  "version": 1,
+  "launchId": "04ac0b4c-e623-4522-9989-3a6997f0846f",
+  "chainId": 11155111,
+  "sourceCommit": "030e2537879f7cf474ef895f9ed1f9999fdb4830",
+  "attestationHash": "d6963c7021ac3a0eb2d05115c44a21fbe8ec7b4dc0ffb5724fa24f8122752269",
+  "contracts": [
+    {
+      "name": "VOLM",
+      "address": "0xf7047a8492fe4d9db3a85ad9942b51e0e195225e",
+      "abiHash": "38880b8e56d42ce900f744a7908c7139632a49f1c3f33385c64ceaed29d37bee",
+      "abiPath": "abi/VOLM.json"
+    },
+    {
+      "name": "VolumeLeaderboardHook",
+      "address": "0x3de21d59af2912a6a6ac0d922aa18bad603d00cc",
+      "abiHash": "6cca844bc066250cf7664d292ca4f70ddcee2de8924b0c9fbef38d95fd641cc0",
+      "abiPath": "abi/VolumeLeaderboardHook.json"
+    }
+  ],
+  "assets": [
+    {
+      "path": "abi/PoolSwapTest.json",
+      "sha256": "515484a7b8289078d8914d1634fd4b707bc155f0f89ba996cf5a358d0b85ae4d"
+    },
+    {
+      "path": "abi/Quoter.json",
+      "sha256": "7f7fc4ea986a47c4fa51210389fe1d8799df5c506433644676d1b34e29256653"
+    },
+    {
+      "path": "abi/StateView.json",
+      "sha256": "a47cc2431d92c7fc66a9667a48b0a936702296e27f3194a97967082ec5f66cc6"
+    },
+    {
+      "path": "abi/VOLM.json",
+      "sha256": "9578fcb499b4ba5fac51462a67a2654d9f803e0ea3af9bdb19130ff695808542"
+    },
+    {
+      "path": "abi/VolumeLeaderboardHook.json",
+      "sha256": "405459f13ccf0072d90f36c1d51ef3c7fb7f754a0487e9d9287fd7573cf72b84"
+    },
+    {
+      "path": "assets/ccip-Tyg7iqAG.js",
+      "sha256": "42bace47bc17efd4ba7ef953f73739d077e6e349559930ebac64b6c307fdd871"
+    },
+    {
+      "path": "assets/index-DtWscJ1u.css",
+      "sha256": "cf8f16826c23bb78876b2033defd36207b7016f6b33ba69ed19c1f1ee4162cf4"
+    },
+    {
+      "path": "assets/index-wql7mVbL.js",
+      "sha256": "492e55009a47bb50f1674b6ec2d451ab572d92d7d8fe6673b94f90a159b6d2e0"
+    },
+    {
+      "path": "index.html",
+      "sha256": "a147b4496ec5ff376bbd2241e12b9fa150fa78d1e3980407603da53b9a13ebec"
+    },
+    {
+      "path": "mark.svg",
+      "sha256": "b866e0d32b1ef3a6ac35bb4a941d9b7a576c81c74d38fe3f7611da243752da06"
+    }
+  ],
+  "network": {
+    "chainId": 11155111,
+    "name": "Sepolia",
+    "testnet": true,
+    "rpcUrls": [
+      "https://ethereum-sepolia-rpc.publicnode.com",
+      "https://rpc.sepolia.ethpandaops.io",
+      "https://sepolia.rpc.sentio.xyz"
+    ],
+    "explorer": "https://sepolia.etherscan.io",
+    "nativeCurrency": {
+      "name": "Sepolia Ether",
+      "symbol": "ETH",
+      "decimals": 18
+    },
+    "faucets": [
+      "https://cloud.google.com/application/web3/faucet/ethereum/sepolia",
+      "https://www.alchemy.com/faucets/ethereum-sepolia"
+    ],
+    "uniswapV4": {
+      "poolManager": "0xe03a1074c86cfedd5c142c4f04f1a1536e203543",
+      "universalRouter": "0x3a9d48ab9751398bbfa63ad67599bb04e4bdf98b",
+      "quoter": "0x61b3f2011a92d183c7dbadbda940a7555ccf9227",
+      "stateView": "0xe1dd9c3fa50edb962e442f60dfbc432e24537e4c",
+      "positionManager": "0x429ba70129df741b2ca2a85bc3a2a3328e5c09b4",
+      "permit2": "0x000000000022d473030f116ddee9f6b43ac78ba3"
+    }
+  },
+  "walletAddChain": {
+    "chainId": "0xaa36a7",
+    "chainName": "Sepolia",
+    "rpcUrls": [
+      "https://ethereum-sepolia-rpc.publicnode.com",
+      "https://rpc.sepolia.ethpandaops.io",
+      "https://sepolia.rpc.sentio.xyz"
+    ],
+    "nativeCurrency": {
+      "name": "Sepolia Ether",
+      "symbol": "ETH",
+      "decimals": 18
+    },
+    "blockExplorerUrls": [
+      "https://sepolia.etherscan.io"
+    ]
+  },
+  "pool": {
+    "fee": 3000,
+    "tickSpacing": 60,
+    "initialPrice": "79228162514264337593543950336",
+    "pairedCurrency": "0x0000000000000000000000000000000000000000"
+  },
+  "deploymentBlock": 11791356,
+  "integrations": {
+    "poolSwapTest": {
+      "address": "0x9b6b46e2c869aa39918db7f52f5557fe577b6eee",
+      "abiPath": "abi/PoolSwapTest.json"
+    },
+    "stateView": {
+      "abiPath": "abi/StateView.json"
+    },
+    "quoter": {
+      "abiPath": "abi/Quoter.json"
+    }
+  }
+}

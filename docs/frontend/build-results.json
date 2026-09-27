@@ -1,0 +1,33 @@
+{
+  "date": "2026-09-27T06:55:18.452Z",
+  "node": "v22.23.3",
+  "commands": [
+    {
+      "command": "npm ci --offline --cache /tmp/volume-npm-cache --no-audit --no-fund",
+      "exitCode": 0,
+      "durationMs": 8555,
+      "output": "\nadded 90 packages in 8s\n"
+    },
+    {
+      "command": "npm run build",
+      "exitCode": 0,
+      "durationMs": 16170,
+      "output": "\n> volume-race@1.0.0 build\n> npm run typecheck && vite build && node scripts/export.mjs\n\n\n> volume-race@1.0.0 typecheck\n> tsc --noEmit\n\nvite v7.1.5 building for production...\ntransforming...\n✓ 422 modules transformed.\nrendering chunks...\ncomputing gzip size...\n../dist/index.html                   0.69 kB │ gzip:   0.41 kB\n../dist/assets/index-DtWscJ1u.css   15.83 kB │ gzip:   4.02 kB\n../dist/assets/ccip-Tyg7iqAG.js      2.61 kB │ gzip:   1.23 kB\n../dist/assets/index-wql7mVbL.js   472.45 kB │ gzip: 147.79 kB\n✓ built in 4.05s\nVerified 2 pinned ABI hashes; exported 10 assets and runtime deployment manifest.\n"
+    },
+    {
+      "command": "npm run test",
+      "exitCode": 0,
+      "durationMs": 1758,
+      "output": "\n> volume-race@1.0.0 test\n> tsx --test tests/*.test.ts\n\nTAP version 13\n# Subtest: amount parsing rejects rounding, exponents, negatives, dust zero and int128 overflow\nok 1 - amount parsing rejects rounding, exponents, negatives, dust zero and int128 overflow\n  ---\n  duration_ms: 3.834204\n  type: 'test'\n  ...\n# Subtest: integer price limits bound both directions without float loss\nok 2 - integer price limits bound both directions without float loss\n  ---\n  duration_ms: 1.262159\n  type: 'test'\n  ...\n# Subtest: payout floors leave every remainder for finalization\nok 3 - payout floors leave every remainder for finalization\n  ---\n  duration_ms: 3.086554\n  type: 'test'\n  ...\n# Subtest: canonical JSON orders objects and preserves ABI array order\nok 4 - canonical JSON orders objects and preserves ABI array order\n  ---\n  duration_ms: 0.560048\n  type: 'test'\n  ...\n# Subtest: swap calldata is exact-input, router-bound and credits the wallet\nok 5 - swap calldata is exact-input, router-bound and credits the wallet\n  ---\n  duration_ms: 27.899703\n  type: 'test'\n  ...\n# Subtest: unknown chain adds exact handoff parameters, then switches again\nok 6 - unknown chain adds exact handoff parameters, then switches again\n  ---\n  duration_ms: 1.014056\n  type: 'test'\n  ...\n# Subtest: switch rejection does not offer chain addition\nok 7 - switch rejection does not offer chain addition\n  ---\n  duration_ms: 1.243244\n  type: 'test'\n  ...\n# Subtest: account/network changes block transaction signing\nok 8 - account/network changes block transaction signing\n  ---\n  duration_ms: 1.157204\n  type: 'test'\n  ...\n# Subtest: empty contract code fails closed\nok 9 - empty contract code fails closed\n  ---\n  duration_ms: 1.309174\n  type: 'test'\n  ...\n# Subtest: failed simulation never reaches wallet signing\nok 10 - failed simulation never reaches wallet signing\n  ---\n  duration_ms: 1.355129\n  type: 'test'\n  ...\n1..10\n# tests 10\n# suites 0\n# pass 10\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 1168.835135\n"
+    },
+    {
+      "command": "npm run check:export",
+      "exitCode": 0,
+      "durationMs": 729,
+      "output": "\n> volume-race@1.0.0 check:export\n> node scripts/check-export.mjs\n\n{\n  \"result\": \"PASS\",\n  \"assets\": 10,\n  \"totalBytes\": 519746,\n  \"pinnedAbiHashes\": [\n    {\n      \"name\": \"VOLM\",\n      \"hash\": \"38880b8e56d42ce900f744a7908c7139632a49f1c3f33385c64ceaed29d37bee\"\n    },\n    {\n      \"name\": \"VolumeLeaderboardHook\",\n      \"hash\": \"6cca844bc066250cf7664d292ca4f70ddcee2de8924b0c9fbef38d95fd641cc0\"\n    }\n  ],\n  \"networkUnchanged\": true,\n  \"everyAssetHasValidSha256\": true\n}\n"
+    }
+  ],
+  "manifestSha256": "1b09a31d3afdcbe305714df65a2c6e68e9cb25e3cfa0e4b41da3bdd1062b2b10",
+  "rebuildMatchesTestedExport": true,
+  "result": "PASS"
+}

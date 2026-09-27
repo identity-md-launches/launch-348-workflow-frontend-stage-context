@@ -1,0 +1,29 @@
+:root {
+  color-scheme: light;
+  --font-body: "Helvetica Neue", Arial, sans-serif;
+  --font-mono: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+  --page: #f5f3ed;
+  --surface: #fffefa;
+  --subtle: #f8f7f2;
+  --text: #202b24;
+  --muted: #62695f;
+  --border: #dedfd5;
+  --control-border: #a8aea1;
+  --forest: #273e31;
+  --on-forest: #f5f6ef;
+  --on-forest-secondary: #c3cfbf;
+  --accent: #d5f77c;
+  --accent-soft: #eef5da;
+  --accent-border: #a3c953;
+  --accent-hover: #c6ec65;
+  --soft-green: #e7eddf;
+  --art-line: #b4bca7;
+  --hover: #eef0e7;
+  --disabled: #eceee6;
+  --notice-bg: #ebe9df;
+  --notice-text: #5e6156;
+  --focus: #3561bb;
+  --error-text: #8e311e;
+  --error-bg: #fff0e7;
+  --error-border: #d7a489;
+}

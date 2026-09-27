@@ -1,0 +1,16 @@
+node_modules/
+**/node_modules/
+.cache/
+**/.cache/
+.vite/
+**/.vite/
+.npm/
+**/.npm/
+.pnpm-store/
+**/.pnpm-store/
+.yarn/cache/
+**/.yarn/cache/
+test-results/
+playwright-report/
+*.tsbuildinfo
+*.tgz
